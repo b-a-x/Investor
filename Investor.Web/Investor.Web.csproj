@@ -2,14 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Common\src\Common.Blazor\Common.Blazor.csproj" />
+    <ProjectReference Include="..\..\Common\src\Common.Blazor\Common.Blazor.csproj" />
   </ItemGroup>
 
 </Project>

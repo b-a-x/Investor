@@ -1,0 +1,29 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Web
+@namespace Investor.Web.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link href="Investor.Web.styles.css" rel="stylesheet" />
+    @*<component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />*@
+
+    <style type="text/css">
+   
+    html, body{
+        margin:0;
+        padding:0;
+        height: 100%;
+    }
+
+   </style>
+</head>
+<body>
+    <component type="typeof(App)" render-mode="ServerPrerendered"/>
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>
