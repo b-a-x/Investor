@@ -1,6 +1,9 @@
 ﻿@inherits LayoutComponentBase
 @using Common.Blazor.Layouts
+@using Common.Blazor.Navigation
 
+
+@*
 <QHeaderMainLayout>
     <HeaderTemplate>
         <div>Home</div>
@@ -8,7 +11,24 @@
         <div>Logout</div>
     </HeaderTemplate>
     <MainTemplate>
-        @Body
+        <div>Main</div>
     </MainTemplate>
 </QHeaderMainLayout>
+*@
+
+
+<QHeaderAsideMainFooterLayout>
+    <HeaderTemplate>
+        <QLogo/>
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+        <div>Hire us</div>
+        <div>Contact</div>     
+    </HeaderTemplate>
+    <AsideTemplate><div>Aside</div></AsideTemplate>
+    <MainTemplate><div>Main</div></MainTemplate>
+    <FooterTemplate><div>Footer</div></FooterTemplate>
+</QHeaderAsideMainFooterLayout>
+
 @*@Body*@
